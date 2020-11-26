@@ -1,7 +1,7 @@
 package javadevelopmentDay01;
 
 public class Volatile {
-	public static int age=0;
+	volatile public static int age=0;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -26,6 +26,12 @@ public class Volatile {
 		Thread thread2 = new Thread(new Runnable() {
 					public void run()
 					{
+						try {
+							Thread.sleep(100);
+						}catch (InterruptedException e)
+						{
+							e.printStackTrace();
+						}
 						
 						age=1;
 						System.out.println("age is updated");
