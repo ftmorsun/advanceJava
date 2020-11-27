@@ -31,7 +31,7 @@ public class ThreadNums {
 		
 		 List<Integer> numbers= Arrays.asList(10,2,30,4,95,6,7,8,2,10, 11, 22, 13, 14,16,19,20,15);
 		 
-		// System.out.println(ForkJoinPool.commonPool());
+		 System.out.println(ForkJoinPool.commonPool());
 		 
 		 numbers.parallelStream()
 		 .map(e->transform(e))
