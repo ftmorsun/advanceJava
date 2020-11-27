@@ -11,7 +11,7 @@ public class WritinIntoFile {
 		// TODO Auto-generated method stub
 		String path="C:\\Users\\falac\\eclipse-workspace";
 		
-		File file = new File(path+"\\FileToWrite.txt");
+		File file = new File(path+"\\FileToWrite2.txt");
 		//Error check
 		FileWriter fw;
 		try {
